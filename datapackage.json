@@ -1,0 +1,67 @@
+{
+  "name": "land-tenure",
+  "title": "Land Tenure",
+  "description": "This tabular data set provides the number of farms within GTA and Peel that are owned, leased, rented, crop-shared and used through other arrangements from 2001-2011.",
+  "homepage": "http://opendata.peelregion.ca/data-categories/environment-and-resources/tenure-of-land,-peel-and-gta.aspx",
+  "version": "1.0.0",
+  "license": {
+    "type": " Open Data Licence for The Regional Municipality of Peel",
+    "url": "http://opendata.peelregion.ca/terms-of-use.aspx"
+  },
+  "author": "Statistics Canada",
+  "resources": [
+    {
+      "name": "land-tenure-2001",
+      "title": "Land Tenure (2001)",
+      "schema": "land-tenure",
+      "path": "data/land-tenure-2001.csv",
+      "format": "CSV",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "land-tenure-2006",
+      "title": "Land Tenure (2006)",
+      "schema": "land-tenure",
+      "path": "data/land-tenure-2006.csv",
+      "format": "CSV",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "land-tenure-2011",
+      "title": "Land Tenure (2011)",
+      "schema": "land-tenure",
+      "path": "data/land-tenure-2011.csv",
+      "format": "CSV",
+      "mediatype": "text/csv"
+    }
+  ],
+  "schemas": {
+    "land-tenure": {
+      "fields": [
+        {
+          "name": "Municipality",
+          "type": "string",
+          "format": "default"
+        },
+        {
+          "name": "Area Owned",
+          "type": "integer",
+          "missingValue": "-",
+          "unit": "acre"
+        },
+        {
+          "name": "Area Leased, Rented or Crop Shared",
+          "type": "integer",
+          "missingValue": "-",
+          "unit": "acre"
+        },
+        {
+          "name": "Land Used Through Other Arrangements",
+          "type": "integer",
+          "missingValue": "-",
+          "unit": "acre"
+        }
+      ]
+    }
+  }
+}
